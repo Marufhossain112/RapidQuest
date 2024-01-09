@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { MdArrowDropDown } from "react-icons/md";
 const UserInfo = () => {
     return (
         <div className=' h-screen bg-[#FAFAFA] w-full'>
@@ -24,7 +24,6 @@ const UserInfo = () => {
                     </div>
 
 
-                    {/* i am unfold */}
                     <div className='flex flex-col'>
                         <span className='text-xl font-semibold'>$19,892</span>
                         <span className='text-[#6d6a6a]'>Account Balance</span>
@@ -38,11 +37,34 @@ const UserInfo = () => {
                         <span className='text-[#6d6a6a]'>Total Interest</span>
                     </div>
 
-                    <div>
-                        <button className=''>I want to</button>
+                    <div >
+                        <button className='flex items-center gap-1 bg-[#4935FF] text-white px-5 py-2 font-semibold rounded-lg text-sm'>I want to
+                            <MdArrowDropDown className='font-semibold' />
+                        </button>
                     </div>
                 </div>
                 {/* Today ends */}
+
+                {/* Transaction */}
+                <div className='flex flex-col gap-5 mt-5'>
+                    <div>
+                        <span className='font-semibold text-base'>Recent Transactions</span>
+                    </div>
+                    <div>
+                        <span className='text-[#6d6a6a] text-sm'>2020-08-07</span> <br />
+                        <span className='text-sm font-semibold'>Withdrawal Transfer To Bank-XXX11</span>
+                    </div>
+                    <div>
+                        <span className='text-[#6d6a6a] text-sm'>2020-08-07</span> <br />
+                        <span className='text-sm font-semibold'>Withdrawal Transfer To Bank-XXX11</span>
+                    </div>
+                    <div>
+                        <span className='text-[#6d6a6a] text-sm'>2020-08-07</span> <br />
+                        <span className='text-sm font-semibold'>Withdrawal Transfer To Bank-XXX11</span>
+                    </div>
+
+                </div>
+                {/* Transaction ends */}
 
             </div>
 
