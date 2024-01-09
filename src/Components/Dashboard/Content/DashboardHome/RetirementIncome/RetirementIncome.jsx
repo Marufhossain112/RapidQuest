@@ -2,7 +2,7 @@ import React from 'react';
 
 const RetirementIncome = () => {
     return (
-        <div>
+        <div className='h-screen bg-green-500'>
             This is retirement income.
         </div>
     );

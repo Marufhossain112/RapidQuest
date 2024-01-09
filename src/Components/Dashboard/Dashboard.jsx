@@ -10,7 +10,7 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="Dashboard-container grid grid-cols-[20px,auto] ml-4">
+        <div className="Dashboard-container grid grid-cols-[20px,auto] ml-4 gap-5">
             <Sidebar currentPage={currentPage} changeContent={changeContent} />
             <Content currentPage={currentPage} />
         </div>

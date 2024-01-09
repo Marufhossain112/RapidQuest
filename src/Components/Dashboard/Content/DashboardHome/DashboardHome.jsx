@@ -5,7 +5,7 @@ import RetirementStrategy from './RetirementStrategy/RetirementStrategy';
 
 const DashboardHome = () => {
     return (
-        <div>
+        <div className='grid grid-cols-[300px,auto,300px]'>
             <UserInfo />
             <RetirementIncome />
             <RetirementStrategy />
