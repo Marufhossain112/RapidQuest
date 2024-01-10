@@ -97,13 +97,6 @@ const RaBarChart = () => (
                 <Bar width={20}
                     height={20} barSize={8} dataKey="uv" stackId="a" fill="#85AFFF" />
             </BarChart>
-
-
-
-
-
-
-
         </ResponsiveContainer>
     </div>
 );
