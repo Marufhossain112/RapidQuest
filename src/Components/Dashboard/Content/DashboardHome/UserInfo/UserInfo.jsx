@@ -2,7 +2,8 @@ import React from 'react';
 import { MdArrowDropDown } from "react-icons/md";
 const UserInfo = () => {
     return (
-        <div className=' h-screen bg-[#FAFAFA] w-full'>
+        // <div className='h-[100vh] md:h-screen bg-[#FAFAFA] w-full'>
+        <div className='h-[70vh] md:h-screen bg-[#FAFAFA] w-full'>
             <div className='flex flex-col justify-center px-12'>
 
                 {/* user image & name */}
@@ -28,18 +29,24 @@ const UserInfo = () => {
                         <span className='text-xl font-semibold'>$19,892</span>
                         <span className='text-[#6d6a6a]'>Account Balance</span>
                     </div>
-                    <div className='flex flex-col '>
-                        <span className='font-semibold text-sm'>$4,000</span>
-                        <span className='text-[#6d6a6a]'>Year-to-Date Contributions</span>
-                    </div>
-                    <div className='flex flex-col '>
-                        <span className='font-semibold text-sm'>$1,892</span>
-                        <span className='text-[#6d6a6a]'>Total Interest</span>
+                    <div className='grid grid-cols-2'>
+                        <div className='flex flex-col '>
+                            <span className='font-semibold text-sm'>$4,000</span>
+                            <span className='text-[#6d6a6a]'>Year-to-Date
+                            </span>
+                        </div>
+                        <div className='flex flex-col '>
+                            <span className='font-semibold text-sm'>$1,892</span>
+                            <span className='text-[#6d6a6a]'>Total Interest</span>
+                        </div>
                     </div>
 
-                    <div >
-                        <button className='flex items-center gap-1 bg-[#4935FF] text-white px-5 py-2 font-semibold rounded-lg text-sm'>I want to
-                            <MdArrowDropDown className='font-semibold' />
+
+                    <div className='w-full' >
+                        <button className=' w-full md:w-1/2 gap-1 bg-[#4935FF] text-white px-5 py-2 font-semibold rounded-lg text-sm flex justify-center items-center'>I want to
+                            <div>
+                                <MdArrowDropDown className='font-semibold' />
+                            </div>
                         </button>
                     </div>
                 </div>

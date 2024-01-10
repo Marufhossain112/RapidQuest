@@ -31,10 +31,10 @@ const RadialChart = () => {
     });
 
     return (
-        <div className='flex items-center'>
-            <Chart options={chartData.options} series={chartData.series} type="radialBar" width={140} height={150} />
-            <Chart options={chartData.options} series={chartData.series1} type="radialBar" width={140} height={150} />
-            <Chart options={chartData.options} series={chartData.series2} type="radialBar" width={140} height={150} />
+        <div className='flex items-center gap-3 mt-5 md:mt-0'>
+            <Chart options={chartData.options} series={chartData.series} type="radialBar" width={100}  height={150} />
+            <Chart options={chartData.options} series={chartData.series1} type="radialBar" width={100} height={150} />
+            <Chart options={chartData.options} series={chartData.series2} type="radialBar" width={100} height={150} />
         </div>
 
     );
